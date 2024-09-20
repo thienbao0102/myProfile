@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/background.jpg);
+}
+
+.container{
+    transform: translateY(20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.container .my-avata-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .my-avata-info .avata{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.container .my-avata-info .username{
+    color: white;
+    font-weight: 600;
+    margin: 8px 0px 0px 0px;
+}
+
+.container .my-avata-info .caption{
+    color: rgb(198, 198, 198);
+    font-size: 14px;
+    margin: 5px 0px 10px 0px;
+}
+
+.container .my-info{
+    position: relative;
+    width: 80%;
+    height: 55px;
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .my-info::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0.7;
+    border-radius: 25px;
+    z-index: 0;
+}
+
+.container .my-info i{
+    font-size: 20px;
+    z-index: 3;
+}
+
+.container .my-info p{
+    color: white;
+    margin-left: 10px;
+    z-index: 3;
+}
+
+.container .my-info:hover{
+    opacity: 0.5;
+}
+.container .my-info:hover::before{
+    opacity: 0.5;
+    background-color: black;
+}

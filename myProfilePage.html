@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="myprofile.css">
+    <title>My Profile</title>
+</head>
+<body>
+    <div class="container">
+        <div class="my-avata-info">
+            <img src="./assets/avata.jpg" alt="" class="avata">
+            <p class="username">Nguyễn Bảo</p>
+            <p class="caption">Sóng gió phủ đời trai, tương lai nhờ nhà vợ</p>
+        </div>
+        <div class="my-info" onclick="opendFb()">
+            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            <p>Facebook</p>
+        </div>
+        <div class="my-info" onclick="opendIns()">
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            <p>Instagram</p>
+        </div>
+        <div class="my-info" onclick="opendTT()">
+            <i class="fa-brands fa-tiktok" style="color: #ffffff;"></i>
+            <p>Tiktok</p>
+        </div>
+        <div class="my-info" onclick="opendEmail()">
+            <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
+            <p>Email</p>
+        </div>
+        <div class="my-info" onclick="opendPhoneNumber()">
+            <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+            <p>Phone Number</p>
+        </div>
+    </div>
+
+    <script>
+        function opendFb(){
+            window.location.href = "fb://profile/1234567890";
+
+            setTimeout(function() {
+                window.location.href = "https://www.facebook.com/profile.php?id=100028199988508";
+            }, 500);
+        }
+
+        function opendTT(){
+            window.location.href = "tiktok://user/@kiepsonggos";
+
+            setTimeout(function() {
+                window.location.href = "https://www.tiktok.com/@kiepsonggos";
+            }, 500);
+        }
+
+        function opendIns(){
+            window.location.href = "instagram://user?username=kiepsonggos";
+
+            setTimeout(function() {
+                window.location.href = "https://www.instagram.com/kiepsonggos";
+            }, 500);
+        }
+
+        function opendEmail(){
+            window.location.href = "mailto:nguyenbao01022004#gmail.com"
+        }
+
+        function opendPhoneNumber(){
+            window.location.href = "tel:+0364047690";
+        }
+    </script>
+</body>
+</html>
